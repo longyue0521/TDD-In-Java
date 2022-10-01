@@ -32,7 +32,7 @@ subprojects {
         testImplementation("jakarta.inject:jakarta.inject-tck:2.0.1")
     }
 
-    tasks.getByName<Test>("test") {
+    tasks.withType<Test>() {
         useJUnitPlatform()
     }
 
