@@ -38,7 +38,7 @@ public class ContainerTest {
                Component instance = context.get(Component.class);
 
                assertNotNull(instance);
-               assertInstanceOf(instance, ComponentWithDefaultConstructor.class);
+               assertTrue(instance instanceof ComponentWithDefaultConstructor);
             }
             //TODO: With Dependencies
             //TODO: A -> B -> C
